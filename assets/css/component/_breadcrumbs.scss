@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.p-breadcrumbs {
+  color: #13334e;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: Yugothic;
+
+  @include mq(md) {
+    margin-bottom: 50px;
+  }
+}

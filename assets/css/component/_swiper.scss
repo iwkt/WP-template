@@ -1,0 +1,83 @@
+@use "../global" as *;
+
+.swiper-container {
+  width: 100%;
+  height: 445px;
+  max-width: 335px;
+  margin: 0 auto !important;
+  overflow: visible !important;
+
+  @include mq(md) {
+    height: calc(639 / 1440 * 100vw);
+    max-width: calc(1100 / 1440 * 100vw);
+  }
+}
+
+// .swiper-wrapper {
+//   transition-duration: 0.8s !important;
+// }
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainvisual {
+  overflow-x: hidden;
+  background-color: #f1f8fb;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 76px; /*ここでページネーションのためのマージンを決定*/
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 30px; /*ここでページネーションの上下位置を決定*/
+  left: 0;
+  width: 100%;
+}
+
+/* ページネーションのサイズと色 */
+.swiper-pagination {
+  height: 30px;
+  width: 30px;
+}
+
+.c-swiper {
+  &__image {
+    display: none;
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__image-sp {
+    @include mq(md) {
+      display: none;
+    }
+  }
+}

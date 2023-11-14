@@ -1,0 +1,30 @@
+// $breakpoints: (
+//   "sm": "screen and (min-width: 480px)",
+//   //スマホ横向き
+//   "md": "screen and (min-width: 768px)",
+//   //タブレット
+//   "lg": "screen and (min-width: 1024px)",
+//   //ノートPCなど小さいPC
+//   "xl": "screen and (min-width: 1440px)",
+
+//   //デスクトップPC
+// ) !default;
+@use "./breakepoint" as bp;
+
+@mixin mq($breakpoint: bp.$breakpoints(md)) {
+  @media #{map-get(bp.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// 各ページのタイポグラフィ
+
+@mixin typo-yu {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "Zen Kaku Gothic New", "Hiragino Sans", Meiryo, "MS PGothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}

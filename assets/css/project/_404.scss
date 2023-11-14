@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.error404 {
+  overflow: hidden !important;
+}
+.p-404 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 60px auto;
+  @include mq(md) {
+    font-size: 60px;
+  }
+  &__container {
+    height: 600px;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../global" as *;
+
+.u-mq_sm-none {
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+.u-mq_md-none {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.u-mq_lg-none {
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+.u-mq_xl-none {
+  @include mq(xl) {
+    display: none;
+  }
+}
+
+.u-mq_md-visible {
+  display: none;
+  @include mq(md) {
+    display: inline;
+  }
+}
+
+.u-mq_lg-visible {
+  display: none;
+  @include mq(lg) {
+    display: inline;
+  }
+}

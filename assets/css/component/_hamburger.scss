@@ -1,0 +1,71 @@
+@use "../global" as *;
+
+//ハンバーガーメニューのオンオフ
+.c-hamburger {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  transition: all 0.4s;
+
+  @include mq(lg) {
+    display: none !important;
+  }
+
+  &.is-active {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.top-page {
+    //top-pageだけ消えるタイミングが違うので設定
+    @include mq(lg) {
+      display: none;
+    }
+  }
+}
+
+.c-hamburger__menu {
+  position: relative;
+  opacity: 1;
+  z-index: 100;
+  & div {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto 6px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    transition: all 0.3s ease-out !important;
+  }
+
+  &.is-active {
+    opacity: 0;
+  }
+}
+
+.c-hamburger__menu.-white div {
+  background-color: #fff;
+}
+
+.c-hamburger__close {
+  width: 28px;
+  height: 28px;
+  justify-self: end;
+  margin-right: 19px;
+  margin-top: -5px;
+
+  & > div {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+
+    background-color: #13334e;
+  }
+  & > div:first-child {
+    transform: rotate(45deg);
+  }
+  & > div:last-child {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,41 @@
+@use "../global" as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+
+  &.is-active {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: YuMincho, "Yu Mincho", "遊明朝", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  font-style: normal;
+
+  // バックグランドにテクスチャを敷く場合は下記をオン
+  // // background-image: url("../images/");
+  // background-repeat: repeat;
+  // background-size: contain;
+
+  &.is-active {
+    overflow: hidden;
+  }
+}
+
+h2 {
+  font-size: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+
+  @include mq(md) {
+    margin-bottom: 100px;
+  }
+}

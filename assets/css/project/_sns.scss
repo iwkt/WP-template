@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.p-sns {
+  &__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+  }
+
+  &__icon {
+    height: auto;
+  }
+}

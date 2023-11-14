@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.c-logo__img {
+  height: 45px;
+  @include mq(lg) {
+    height: 53px;
+  }
+}

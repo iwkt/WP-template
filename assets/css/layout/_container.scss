@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.l-global__container {
+  width: 1920px;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.l-content__container {
+  width: 1024px;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0 15px;
+
+  @include mq(md) {
+    padding: 0 30px;
+  }
+}
+
+.l-section__container {
+  // padding-left: 10px;
+  // padding-right: 10px;
+  width: 100%;
+  // max-width: 1980px;
+}

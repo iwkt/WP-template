@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.u-pd {
+  &-s-r {
+    padding-right: 20px;
+  }
+  &-m-r {
+    padding-right: 50px;
+  }
+  &-l-r {
+    padding-right: 100px;
+  }
+}

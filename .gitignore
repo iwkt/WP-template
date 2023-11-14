@@ -1,0 +1,13 @@
+node_modules/
+
+style.css
+style.css.map
+assets/css/style.css
+assets/css/style.css.map
+package.json
+package-lock.json
+gulpfile.js
+.DS_Store
+.notebook/DS_Store
+.assets/DS_Store
+

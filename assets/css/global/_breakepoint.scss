@@ -1,0 +1,9 @@
+$breakpoints: (
+  "sm": "screen and (min-width: 480px)",
+  //スマホ横向き
+  "md": "screen and (min-width: 768px)",
+  //タブレット
+  "lg": "screen and (min-width: 1024px)",
+  //ノートPCなど小さいPC
+  "xl": "screen and (min-width: 1440px)",
+) !default;
